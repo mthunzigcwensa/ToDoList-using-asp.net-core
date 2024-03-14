@@ -1,0 +1,22 @@
+﻿@using ToDoList.Models
+@model List<ToDoTask>
+<div class="ListContainer">
+    
+    <div class="centered">
+        <a asp-controller="ToDoTask" asp-action="Create" class="createBTN">Add New Task</a>
+    </div>
+
+    @foreach (var obj in Model)
+    {
+        <div class="todo">
+            <h1>@obj.Title</h1>
+            <p>@obj.Description</p>
+            <div class="buttons">
+                <a asp-controller="ToDoTask" asp-action="Edit" asp-route-id="@obj.Id" class="editBTN">Edit</a>
+                <a asp-controller="ToDoTask" asp-action="Delete" asp-route-id="@obj.Id" class="deleteBTN">Delete</a>
+            </div>
+        </div>
+    }
+</div>
+
+

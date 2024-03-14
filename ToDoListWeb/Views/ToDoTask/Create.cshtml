@@ -1,0 +1,18 @@
+﻿@using ToDoList.Models
+@model ToDoTask
+
+<div class="AddTodoContainer">
+    <h2>Add a New Todo</h2>
+    <form method="post" id="addTodoForm">
+        <label asp-for="Title" for="title">Title:</label>
+        <span asp-validation-for="Title" class="text-danger"></span>
+        <input asp-for="Title" type="text" id="title" name="title" >
+        <label asp-for="Description" >Description:</label>
+        <span asp-validation-for="Description" class="text-danger"></span>
+        <textarea asp-for="Description" id="description" name="description" ></textarea>
+        <button type="submit">Submit</button>
+        <a asp-controller="ToDoTask" asp-action="Index" class="check">
+            back home
+        </a>
+    </form>
+</div>

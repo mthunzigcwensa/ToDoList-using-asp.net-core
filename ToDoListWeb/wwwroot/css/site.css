@@ -1,0 +1,169 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #E0D4C5;
+    margin: 0;
+    padding: 0;
+}
+
+.ListContainer {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #424145;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    position: relative; /* Needed for positioning the image and button */
+}
+
+
+.centered {
+    text-align: center; /* Centers the button */
+    margin-bottom: 20px; /* Adds spacing below the button */
+}
+
+.createBTN {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+    .createBTN:hover {
+        background-color: #45a049;
+    }
+
+.todo {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+    .todo h1 {
+        color: #0E401E;
+        margin-bottom: 10px;
+    }
+
+    .todo p {
+        color: #2F2E2C;
+        margin-bottom: 20px;
+    }
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+    .buttons a {
+        text-decoration: none;
+        padding: 8px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin-left: 10px;
+    }
+
+.editBTN {
+    background-color: #FFC107;
+    color: #333;
+}
+
+.deleteBTN {
+    background-color: #F44336;
+    color: #fff;
+}
+
+.todo:last-child {
+    margin-bottom: 0;
+}
+
+
+.AddTodoContainer {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #424145;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: antiquewhite;
+    text-align: center;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: antiquewhite;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    button[type="submit"]:hover {
+        background-color: #45a049;
+    }
+
+.text-danger {
+    color: #f00;
+    font-size: 12px;
+}
+
+.check {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+    .check:hover {
+        color: #000;
+        text-decoration: underline;
+    }
